@@ -1,0 +1,9 @@
+{
+  "name": "event-publisher-plugin",
+  "version": "1.0.0",
+  "description": "Publishes events to the Cordis event bus",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["bus.publish"],
+  "inject": ["commands"]
+}

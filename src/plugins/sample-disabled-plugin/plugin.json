@@ -1,0 +1,9 @@
+{
+  "name": "sample-disabled-plugin",
+  "version": "1.0.0",
+  "description": "Demonstrates a disabled plugin (central config sets it disabled)",
+  "main": "index.js",
+  "enabled": false,
+  "functions": ["disabled.demo"],
+  "inject": ["commands"]
+}

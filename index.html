@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Electron Plugin Development Demo</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Electron + Node.js Plugin Development Demo</h1>
+    <p class="sub">The main window is divided vertically into three parts: top = function buttons of loaded plugins, middle = function execution result, bottom = info (total functions / customer customized functions).</p>
+  </header>
+
+  <main class="layout">
+    <!-- Part 1 (top): function buttons of loaded plugins -->
+    <section class="panel" id="plugin-section">
+      <h2>Loaded Plugin Functions</h2>
+      <div id="plugin-buttons" class="btn-grid">
+        <p class="muted">Loading…</p>
+      </div>
+    </section>
+
+    <!-- Part 2 (middle): result after clicking a function button -->
+    <section class="panel flex-1" id="result-section">
+      <h2>Function Execution Result</h2>
+      <div class="result-head" id="result-head">(Click a function button above)</div>
+      <pre id="result-box" class="result-box"></pre>
+    </section>
+
+    <!-- Part 3 (bottom): info -->
+    <section class="panel" id="info-section">
+      <h2>Info</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-num" id="total-plugins">-</div>
+          <div class="info-label">Plugins in Software</div>
+        </div>
+        <div class="info-card">
+          <div class="info-num" id="total-functions">-</div>
+          <div class="info-label">Total Functions</div>
+        </div>
+        <div class="info-card">
+          <div class="info-num" id="loaded-functions">-</div>
+          <div class="info-label">Customer Enabled Functions</div>
+        </div>
+      </div>
+      <div class="info-detail">
+        <div class="info-detail-title">Customer customized (enabled) functions:</div>
+        <ul id="customized-list" class="customized-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="renderer.js"></script>
+</body>
+</html>

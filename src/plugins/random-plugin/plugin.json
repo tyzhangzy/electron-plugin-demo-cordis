@@ -1,0 +1,9 @@
+{
+  "name": "random-plugin",
+  "version": "1.0.0",
+  "description": "Random number command",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["random.number"],
+  "inject": ["commands"]
+}

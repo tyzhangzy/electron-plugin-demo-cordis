@@ -1,0 +1,9 @@
+{
+  "name": "clock-plugin",
+  "version": "1.0.0",
+  "description": "Clock: multiple commands + submenu that pushes a message to the renderer",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["clock.now", "clock.formatted"],
+  "inject": ["commands", "menu", "ipc"]
+}

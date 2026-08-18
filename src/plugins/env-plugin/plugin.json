@@ -1,0 +1,9 @@
+{
+  "name": "env-plugin",
+  "version": "1.0.0",
+  "description": "Environment info command",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["env.info"],
+  "inject": ["commands"]
+}

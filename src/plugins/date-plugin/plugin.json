@@ -1,0 +1,9 @@
+{
+  "name": "date-plugin",
+  "version": "1.0.0",
+  "description": "Date commands",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["date.today", "date.weekday"],
+  "inject": ["commands"]
+}

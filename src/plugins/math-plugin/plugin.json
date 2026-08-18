@@ -1,0 +1,9 @@
+{
+  "name": "math-plugin",
+  "version": "1.0.0",
+  "description": "Math commands with params & error handling",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["math.add", "math.divide"],
+  "inject": ["commands", "menu"]
+}

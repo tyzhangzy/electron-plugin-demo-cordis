@@ -1,0 +1,27 @@
+{
+  "name": "electron-plugin-demo-cordis",
+  "version": "1.0.0",
+  "description": "electron-plugin-demo refactored on the Cordis framework (DI / plugin / events / lifecycle)",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-assets.mjs",
+    "start": "npm run build && electron .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "smoke": "node scripts/headless-smoke.mjs",
+    "list-plugins": "node scripts/list-plugins.mjs",
+    "toggle-plugin": "node scripts/toggle-plugin.mjs"
+  },
+  "keywords": ["electron", "plugin", "cordis", "typescript"],
+  "license": "ISC",
+  "dependencies": {
+    "@cordisjs/core": "^3.18.1",
+    "schemastery": "^3.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "electron": "^43.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "calc-plugin",
+  "version": "1.0.0",
+  "description": "Percentage calculation command",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["calc.percent"],
+  "inject": ["commands"]
+}

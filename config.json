@@ -1,0 +1,19 @@
+{
+  "_note": "Central plugin configuration (schemastery-validated). Controls whether each plugin is loaded. plugins.<name>.enabled overrides each plugin's own plugin.json enabled field.",
+  "plugins": {
+    "hello-plugin": { "enabled": true },
+    "clock-plugin": { "enabled": true },
+    "math-plugin": { "enabled": true },
+    "date-plugin": { "enabled": true },
+    "random-plugin": { "enabled": true },
+    "note-plugin": { "enabled": true },
+    "calc-plugin": { "enabled": true },
+    "text-plugin": { "enabled": false },
+    "env-plugin": { "enabled": true },
+    "version-plugin": { "enabled": true },
+    "event-publisher-plugin": { "enabled": true },
+    "event-subscriber-plugin": { "enabled": true },
+    "report-plugin": { "enabled": true },
+    "sample-disabled-plugin": { "enabled": false }
+  }
+}

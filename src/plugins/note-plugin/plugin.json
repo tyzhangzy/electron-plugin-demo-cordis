@@ -1,0 +1,9 @@
+{
+  "name": "note-plugin",
+  "version": "1.0.0",
+  "description": "Text manipulation commands",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["note.upper", "note.reverse"],
+  "inject": ["commands"]
+}

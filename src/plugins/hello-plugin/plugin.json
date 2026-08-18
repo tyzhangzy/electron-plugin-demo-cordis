@@ -1,0 +1,9 @@
+{
+  "name": "hello-plugin",
+  "version": "1.0.0",
+  "description": "Command + menu + custom IPC",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["hello.greet"],
+  "inject": ["commands", "menu", "ipc"]
+}

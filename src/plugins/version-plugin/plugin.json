@@ -1,0 +1,9 @@
+{
+  "name": "version-plugin",
+  "version": "1.0.0",
+  "description": "App info command",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["version.app"],
+  "inject": ["commands"]
+}

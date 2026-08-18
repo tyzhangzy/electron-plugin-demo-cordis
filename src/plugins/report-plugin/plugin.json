@@ -1,0 +1,9 @@
+{
+  "name": "report-plugin",
+  "version": "1.0.0",
+  "description": "Depends on math-plugin & hello-plugin; aggregates their command results",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["report.aggregate"],
+  "inject": ["commands"]
+}

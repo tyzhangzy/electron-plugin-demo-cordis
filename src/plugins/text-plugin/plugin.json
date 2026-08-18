@@ -1,0 +1,9 @@
+{
+  "name": "text-plugin",
+  "version": "1.0.0",
+  "description": "Character count command",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["text.count"],
+  "inject": ["commands"]
+}

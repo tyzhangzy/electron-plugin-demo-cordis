@@ -1,0 +1,9 @@
+{
+  "name": "event-subscriber-plugin",
+  "version": "1.0.0",
+  "description": "Subscribes to events on the Cordis event bus",
+  "main": "index.js",
+  "enabled": true,
+  "functions": ["bus.last-message"],
+  "inject": ["commands"]
+}
